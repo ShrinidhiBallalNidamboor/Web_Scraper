@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="UTF-8">
+     <title>Web Scraper</title>
+     <link rel="stylesheet" href="css/styles.css">
+     <link rel="icon" href="Web_Scraper.png" type="image/x-icon">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>  
+        <style>
+            body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            .topnav {
+            overflow: hidden;
+            background-color: #66BFBF;
+            }
+            
+            .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            }
+            
+            .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+            }
+            
+            .topnav a.active {
+            background-color: #11999E;
+            color: white;
+            }
+        </style>
+
+        <div class="topnav">
+            <a class="active" href="/">Home</a>
+            <a href="/How_to_use">How to Use</a>
+            <a id="myBtn">Contact</a>
+        </div>
+        <div class="top_conatiner">
+            <p class="first_para1">
+                Web Scraper
+            </p>
+            <img src="mountain.png" alt="mountain">
+            <hr>  
+            
+        </div>
+        <form action="/" method="post">
+                <label>Enter the url :   </label>   
+                    <input type="text" class="form-control" name="url" placeholder="URL" required>
+                    <br><br>
+                <label>Enter keywords : </label>
+                    <input type="text" class="form-control" name="concept" placeholder="keywords" required>
+                    <br>
+                    <br>
+                <button type="submit" class="btn btn-primary btn-block" style="background-color: #76C2AF;">Find</button>                                           
+        </form>
+
+        <hr>
+        <script>
+            var x = document.getElementById("myBtn");
+            if (x.addEventListener) {
+            x.addEventListener("click", myFunction);
+            } else if (x.attachEvent) {
+            x.attachEvent("onclick", myFunction);
+            }
+            
+            function myFunction() {
+            alert("My Email Address is ballalshrinidhi@gmail.com");
+            }
+        </script>
+
+        <div class="bottom_container">
+            <a class="footer-link" href="https://www.facebook.com/shrinidhi.ballal.1">My-facebook-link</a>
+            <p class="Signature">©2021 Shrinidhi Ballal.</p>
+        </div>
+
+</body>
+ 
+</html>

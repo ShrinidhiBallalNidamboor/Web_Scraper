@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+     <!--the emoji is borrowed from the unicode-->
+     <!--the title is played in the tab of the browser.-->
+     <!--For all the common text we use in the html code, we use UTF-8.-->
+     <meta charset="UTF-8">
+     <title>Web Scraper</title>
+     <!--the way to link the two documnets.-->
+     <link rel="stylesheet" href="css/styles.css">
+     <!--addition of an favicon to the html file and the web page.-->
+     <!--the rel icon sets the image as the favicon on the top of the tag.-->
+     <link rel="icon" href="Web_Scraper.png" type="image/x-icon">
+
+     <!--Addition of the font style with the help of the google fonts.-->
+     <!--Click on add and paste the link into the code, also copy the font family onto the css-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>  
+        <style>
+            body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            .topnav {
+            overflow: hidden;
+            background-color: #66BFBF;
+            }
+            
+            .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            }
+            
+            .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+            }
+            
+            .topnav a.active {
+            background-color: #11999E;
+            color: white;
+            }
+        </style>
+
+        <div class="topnav">
+            <a class="active" href="/">Home</a>
+            <a href="/How_to_use">How to Use</a>
+            <a id="myBtn">Contact</a>
+        </div>
+        <br><br>
+
+        <p class="first_para">How to Use</p>
+        <p class="information">
+                    Enter the url that has to be searched into the search bar.<br>
+                    Enter the keyword separated by commas, that has to be searched in the space given, 
+                    based on which the url search has to be made.    
+        </p>
+            
+        <script>
+            var x = document.getElementById("myBtn");
+            if (x.addEventListener) {
+            x.addEventListener("click", myFunction);
+            } else if (x.attachEvent) {
+            x.attachEvent("onclick", myFunction);
+            }
+            
+            function myFunction() {
+            alert("My Email Address is ballalshrinidhi@gmail.com");
+            }
+        </script>
+        <div class="bottom_container">
+            <a class="footer-link" href="https://www.facebook.com/shrinidhi.ballal.1">My-facebook-link</a>
+            <p class="Signature">©2021 Shrinidhi Ballal.</p>
+        </div>
+
+</body>
+ 
+</html>
